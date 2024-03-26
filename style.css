@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif+Khojki:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    background-color: black;
+}
+
+.sidebar{
+    background-color: black;
+    margin: 10px;
+    width: 350px;
+}
+.main-content {
+    background-color: rgb(16, 16, 16);
+    margin: 10px;
+    border-radius: 30px;
+    overflow: auto;
+    color: white;;
+    flex: 1;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+}
+.music-player{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav{
+    background-color: rgb(16, 16, 16);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+}
+
+.slidetitle{
+    color:rgb(128, 120, 120);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+}
+
+.slidetitle:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#searchicon{
+    color: rgb(128, 120, 120);
+    padding: 20px;
+    font-size: 23px;
+}
+
+#searchicon:hover{
+    color: white;
+    cursor: pointer;
+}
+.nav-options{
+    color: grey;
+}
+.nav-options:hover{
+    color: white;
+}
+
+.logo{
+    margin: 10px;
+}
+
+.logo img{
+    height: 30px;
+    color: white;
+}
+
+.logo span{
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.library{
+        margin-top: 20px;
+        background-color: rgb(16, 16, 16);
+        border-radius: 30px;
+ 
+
+}
+.options img {
+    height: 20px;
+    margin: 20px;
+}
+
+.options a{
+    text-decoration: none;
+    color: rgb(128, 120, 120);
+    
+    margin: 15px;
+}
+
+.options a:hover{
+    color: white;
+}
+
+.options
+        {
+            display: flex;
+            flex-direction: row;
+        }
+
+#addicon{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+#arrow{
+        color: white;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+}
+
+.playlist{
+    margin-top: 10px;
+    margin: 10px;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: #1B1B1B;
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+.badge{
+    border-radius: 50px;
+    padding: 10px;
+    height: 43px;
+    background-color: white;
+    color: black;
+}
+
+.playlist:hover{
+    animation: infinite;
+    animation-fill-mode: backwards;
+}
+
+.podcasts{
+            margin-top: 20px !important;
+            margin: 10px;
+            border-radius: 30px;
+            padding: 30px;
+            background-color: #1B1B1B;
+            color: white;
+            font-family: "Nunito", sans-serif;
+}
+.podcasts button{
+    border-radius: 50px;
+    height: 40px;
+}
+
+.scroll{
+        overflow: auto;
+        max-height: calc(100vh - 360px);
+}
+.sticky-nav{
+    position: sticky;
+    padding: 4px;
+    background-color: rgb(16, 16, 16);
+    z-index: 1;
+    top: 0;
+    display: flex;
+    padding: 1rem 1rem 0;
+    justify-content: space-between;
+}
+.nav-icons img{
+    height: 1.6rem;
+    background-color: black;
+    border-radius: 50px;
+}
+.nav-end .badge{
+    margin-right: 10px;
+}
+#notify{
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+#user {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+.cards-container{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.card{
+    background-color: #1B1B1B;
+    margin-top: 30px;
+    width: 190px;
+    margin-left: 20px;
+}
+.card img{
+    height: 180px;
+    width: 190px;
+}
+
+.card-title{
+    font-weight: 600px;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 6px;
+}
+
+.card-info{
+    color: rgb(161, 157, 157);
+    font-size: 0.9rem;
+    margin-left: 6px;
+}
+.main-footer{
+    height: 300px;
+}
+
+h2{
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player {
+    height: 18px;
+    padding-right: 20px;
+    opacity: 0.4;
+}
+.player:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.pause {
+    height: 35px;
+    padding-right: 20px;
+}
+
+.pause:hover {
+    cursor: pointer;
+}
+
+.play{
+    border-radius: 50px;
+    height: 0.4rem;
+    width: 400px;
+    align-items: center;
+    appearance: none;
+}
+
+.play::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 50px;
+    height: 0.4rem;
+}
+
+.play::-webkit-slider-thumb{
+    margin-top: -0.3rem;
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100px;
+    background-color: green;
+}
+
+.player{
+    text-align: center;
+}
+.album-info{
+    display: flex;
+}
+.album-info img{
+    width: 50px;
+}
+
+.album-info h3{
+    font-size: 1rem;
+}
+.album-info p{
+    font-size: 0.8rem;
+    color: #888;
+}
+.album-details{
+    padding-left: 10px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media screen and (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}

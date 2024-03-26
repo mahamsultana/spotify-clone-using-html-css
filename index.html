@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/logo.png" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Spotify Music For Everyone</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="nav">
+          <div class="logo">
+            <a href="#"
+              ><img src="./assets/logo.png" alt="" /> <span>Spotify</span></a
+            >
+          </div>
+          <div class="home">
+            <i
+              style="color: aliceblue; font-size: 23px; padding: 20px"
+              class="fa-solid fa-house"
+            ></i>
+            <a href="#" style="color: white" class="slidetitle">Home</a>
+          </div>
+          <div class="search">
+            <i id="searchicon" class="fa-solid fa-magnifying-glass"></i>
+            <a href="#" class="slidetitle">Search</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="options">
+            <img src="./assets/library_icon.png" alt="" />
+            <a href="#">Your Library</a>
+            <div class="icon">
+              <i id="addicon" class="fa-solid fa-plus"></i>
+              <i id="arrow" class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="scroll">
+            <div class="playlist">
+              <h6>Create your first playlist</h6>
+              <p>it's easy we'll help you</p>
+              <button class="badge">Create a playlist</button>
+            </div>
+            <div class="podcasts">
+              <h6>Let's find some podcasts to follow</h6>
+              <p>we'll keep you updated on new episodes</p>
+              <button class="badge">Browse podcasts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="sticky-nav">
+          <div class="nav-icons">
+            <img class="hide" src="./assets/backward_icon.png" />
+            <img class="hide" src="./assets/forward_icon.png" />
+          </div>
+          <div class="nav-end">
+            <button class="badge">Explore Premium</button>
+            <button class="badge">
+              <i class="fa-regular fa-circle-down"></i>Install App
+            </button>
+            <i id="user" class="fa-solid fa-bell"></i>
+            <i id="notify" class="fa-solid fa-user"></i>
+          </div>
+        </div>
+        <h2>Recently Played</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img class="card-img" src="./assets/card1img.jpeg" />
+            <p class="card-title">Top-50 Global</p>
+            <p class="card-info">Your daily updates for the most played</p>
+          </div>
+        </div>
+        <h2>Trending New Year</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img class="card-img" src="./assets/card2img.jpeg" />
+            <p class="card-title">Mahiye Jinne Sona</p>
+            <p class="card-info">Arijit Singh</p>
+          </div>
+          <div class="card">
+            <img class="card-img" src="./assets/card3img.jpeg" />
+            <p class="card-title">Mere Pass Tum Ho</p>
+            <p class="card-info">Rahat Fateh Ali Khan</p>
+          </div>
+          <div class="card">
+            <img class="card-img" src="./assets/card4img.jpeg" />
+            <p class="card-title">Alter Ego Naa Ready</p>
+            <p class="card-info">Leo</p>
+          </div>
+          <div class="card">
+            <img class="card-img" src="./assets/card5img.jpeg" />
+            <p class="card-title">Top-Songs Global</p>
+            <p class="card-info">Your daily updates for the most played</p>
+          </div>
+          <div class="card">
+            <img class="card-img" src="./assets/card6img.jpeg" />
+            <p class="card-title">Top-Songs India</p>
+            <p class="card-info">Your daily updates for the most played</p>
+          </div>
+          <div class="card">
+            <img class="card-img" src="./assets/card3img.jpeg" />
+            <p class="card-title">Mere Pass Tum Ho</p>
+            <p class="card-info">Your daily updates for the most played</p>
+          </div>
+          <div class="card">
+            <img class="card-img" src="./assets/card2img.jpeg" />
+            <p class="card-title">Mahiye Jinne Sona</p>
+            <p class="card-info">Your daily updates for the most played</p>
+          </div>
+        </div>
+        <div class="main-footer"></div>
+      </div>
+      <div class="music-player">
+        <div class="album">
+          <div class="album-info">
+            <div class="album-img">
+              <img src="./assets/card2img.jpeg" />
+            </div>
+            <div class="album-details">
+              <span>Mahiye Jinne Sona</span>
+              <p>Ali Zafar</p>
+            </div>
+          </div>
+        </div>
+        <div class="music-control">
+          <div class="player-control">
+            <img class="player" src="./assets/player_icon1.png" />
+            <img class="player" src="./assets/player_icon2.png" />
+            <img class="pause" src="./assets/player_icon3.png" />
+            <img class="player" src="./assets/player_icon4.png" />
+            <img class="player" src="./assets/player_icon5.png" />
+          </div>
+          <span class="current-time">2:34</span>
+          <input class="play" type="range" min="0" max="50" />
+          <span class="total-time">4:02</span>
+        </div>
+        <div class="control">control</div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
